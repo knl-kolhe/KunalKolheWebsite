@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 :host {
     overflow: auto;
 }
@@ -279,4 +280,287 @@ img.glance {
     text-align: center;
     outline: none;
     background-color: Transparent;
+=======
+:host {
+    overflow: auto;
+}
+
+.navbar {
+    transition: all 0.4s;
+    width: 100vw;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: rgb(134, 133, 133);
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+
+.navbar.active {
+    background: #000000;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.navbar.active .nav-link {
+    /* color: #0c3d27; */
+    color: #afdfc9;
+    width: 100%;
+}
+
+.navbar.active .navbar-brand {
+    color: #00ff73;
+    /* color: #ffffff; */
+    width: 100%;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: rgb(134, 133, 133);
+    width: 100%;
+}
+
+html {
+    height: 100%;
+    width: 100vw;
+    background-color: #000000;
+    /* max-width: 100%; */
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    background-color: #000000;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    /* position: absolute; */
+}
+
+.text-theme {
+    color: #afdfc9;
+}
+
+.parallax-spiral {
+    /* The image used */
+    background-color: black;
+    background-image: url('../images/spiral.jpg');
+    /* Full height */
+    /* height: 100%;  */
+    /* min-height: 50%; */
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-spiral-2 {
+    /* The image used */
+    background-image: url('../images/spiral.jpg');
+    /* Full height */
+    /* height: 100%;  */
+    /* min-height: 50%; */
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-digital {
+    height: auto;
+    background-image: url("../images/background.jpg");
+    /* opacity: 0.3; */
+    /* Full height */
+    /* height: 100%;  */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax-buttons {
+    height: auto;
+    background-image: url("../images/spiral.jpg");
+    /* opacity: 0.3; */
+    /* Full height */
+    /* height: 100%;  */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .parallax-spiral {
+        background-attachment: scroll;
+    }
+    /* .parallax-digital {
+        background-attachment: scroll;
+}
+
+*/
+    .parallax-buttons {
+        background-image: linear-gradient(180deg, #000000b2, #1d4936);
+        background-attachment: scroll;
+    }
+    .parallax-spiral-2 {
+        background-image: linear-gradient(180deg, #000000, #1d4936);
+    }
+}
+
+img.glance {
+    width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+    img.glance {
+        width: 30%;
+    }
+}
+
+#timeline-content {
+    /* margin-top: 0px; */
+    /* padding-top: 0px; */
+    text-align: center;
+}
+
+
+/* Timeline */
+
+.timeline {
+    border-left: 4px solid #4bc98e98;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(59, 59, 59, 0.5);
+    color: rgb(255, 255, 255);
+    /* font-family: 'Chivo', sans-serif; */
+    margin: 50px auto;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    font-weight: 100;
+    max-width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .timeline {
+        max-width: 60%;
+    }
+}
+
+.timeline h1 {
+    /* font-family: 'Saira', sans-serif; */
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    /* font-family: 'Saira', sans-serif; */
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -217.5px;
+    color: rgba(255, 255, 255, 0.5);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+    /* font-family: 'Saira', sans-serif; */
+}
+
+.timeline .event:after {
+    box-shadow: 0 0 0 4px #4bc98e;
+    left: -57.85px;
+    background: #313534;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+}
+
+
+/* Timeline CSS end */
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 190px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #000000;
+    border-radius: 50px;
+    text-align: center;
+    /* box-shadow: 2px 2px 3px rgb(255, 255, 255); */
+}
+
+.my-float {
+    margin-top: 22px;
+}
+
+.block {
+    /* display: block; */
+    width: 100%;
+    border: none;
+    background-image: linear-gradient(180deg, #000000b2, #249966);
+    opacity: 50%;
+    color: #ffffff;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background-color: Transparent;
+>>>>>>> Stashed changes
 }

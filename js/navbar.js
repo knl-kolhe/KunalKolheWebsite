@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 $(function() {
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 10) {
@@ -28,3 +29,8 @@ function myFunction() {
         tl_toggle.textContent = "Click to expand timeline"
     }
 }
+=======
+$(function() {
+    $("#nav-placeholder").load("./navBar.html");
+});
+>>>>>>> Stashed changes
